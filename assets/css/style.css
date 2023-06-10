@@ -1,0 +1,162 @@
+body {
+    background-color: #e8ebe4;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Se trabajó el container padre que contiene a las dos secciones hijas:Cointaner_menu y principal_mensajeria */
+.container {
+
+    display: flex;
+    padding: 0%;
+    min-height: 100vh;
+}
+
+.Container_menu,
+.principal_mensajeria {
+    margin: 0%;
+}
+
+/*Propiedades de .Container_menu que es elemento padre de:desplegar_contacto, button_properties y 
+ de los div bajo la class caja_contacto*/
+
+.Container_menu {
+    flex-direction: column;
+    background-color: #fff;
+    border: solid 1px #bec1be;
+    margin: 0.1em;
+    padding: 0%;
+    width: 25%;
+}
+
+/* Propiedades de los elemento hijos dentro de elemento padre desplegar_contacto*/
+
+.desplegar_contacto {
+    display: flex;
+    border: solid 1px #bec1be;
+    justify-content: space-between;
+}
+
+.caja_estado_usuario {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+.caja_estado_usuario img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 0.5em solid #fff;
+    position: relative;
+}
+
+.caja_estado_usuario span {
+    font-size: x-small;
+    color: #828485;
+}
+
+.barra_menu {
+    width: 30%;
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+/*Propiedades del elemnto button_properties, al cual se aplicó interactividad con hover y focus*/
+
+.button_properties button {
+    background-color: #a491d2;
+    width: 14em;
+    height: 4em;
+    border: #fff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    color: #fff;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.button_properties button:hover {
+    background-color: #cdc3e6;
+}
+
+.button_properties button:focus {
+    background-color: #bec1bb;
+}
+
+.button_properties {
+    min-height: 5em;
+    text-align: center;
+    border: solid 1px #bec1be;
+}
+
+/* Se define las propiedades del resto de los contactos que se agruparon bajo la clase
+.caja_contacto, también se le dió interactividad con hover  */
+
+
+.caja_contacto {
+    align-items: center;
+    border: 0.03em solid #bec1bb;
+    display: flex;
+    flex: 0 0 40rem;
+    max-width: 40em;
+    justify-content: baseline;
+    font-weight: bold;
+
+}
+
+.caja_contacto span {
+    font-size: smaller;
+
+}
+
+.caja_contacto img {
+
+    width: 3.5em;
+    border-radius: 50%;
+    border: 0.5em solid #fff;
+    margin-left: 2em;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+
+.caja_contacto img:hover {
+    transform: scale(1.5);
+}
+
+.caja_contacto p {
+    margin-right: 1em;
+    font-size: medium;
+    margin-left: 1em;
+}
+
+/*Propiedades de sección mensajería */
+
+
+.principal_mensajeria {
+    text-align: center;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.caja_mensajeria img {
+    width: 15em;
+}
+
+.caja_mensajeria h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.caja_mensajeria p {
+    font-size: medium;
+}
+
+
